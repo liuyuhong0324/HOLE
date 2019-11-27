@@ -1,0 +1,5 @@
+DROP TABLE IF EXISTS `content`;
+CREATE TABLE `content`(
+    `post_nickname` varchar(100) NOT NULL COMMENT '投稿昵称',
+    `post_content` mediumtext NOT NULL COMMENT '投稿内容'
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=UTF8 COMMENT '内容表';

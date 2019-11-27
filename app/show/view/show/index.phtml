@@ -1,0 +1,18 @@
+<div class="container-fluid">
+    <?php
+        foreach ($list as $i=>$row) {
+    ?>
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <th>{$row.post_nickname}</th>
+        </div>
+        <div class="panel-body">
+            <th>{$row.post_content}</th>
+        </div>
+    </div>
+    <?php
+        }
+    ?>
+</div>
+
+{$list->render()}
