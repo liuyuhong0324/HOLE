@@ -3,3 +3,9 @@ CREATE TABLE `content`(
     `post_nickname` varchar(100) NOT NULL COMMENT '投稿昵称',
     `post_content` mediumtext NOT NULL COMMENT '投稿内容'
 ) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=UTF8 COMMENT '内容表';
+
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE `user`( 
+    `admin_username` varchar(10) NOT NULL COMMENT '管理员用户名' DEFAULT 'admin',
+    `admin_password` varchar(20) NOT NULL COMMENT '管理员密码' DEFAULT 'admin'
+) ENGINE INNODB AUTO_INCREMENT=24 DEFAULT CHARSET=UTF8 COMMENT '管理员用户表'
